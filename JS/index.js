@@ -3,8 +3,8 @@ console.log("Adding One!");
 const addOne = (array, indx) => {
 	// Set i equal to last index in array by default so user wont have to pass it in manually
 	let i = indx === undefined ? array.length - 1 : indx;
-	// If we are beyond the first digit in the array, that means the first digit was a 9 that we set equal to 0
-	// So now all we have to do is shif every digit in the array to the left
+	// If we are beyond the first digit in the array, that means all digits were 9.
+	// So now all we have to do is shift every digit in the array to the right
 	// And set the first index to 1
 	if (i < 0) {
 		array.unshift(1);
