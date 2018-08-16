@@ -6,10 +6,14 @@ const addOne = (array, indx) => {
 
 	if (array[i] < 9) {
 		array[i] ++;
+		return array;
 	}
+	
+	array[i] = 0;
+
 	return array;
 
 
 };
 
-console.log(addOne([2,3,1,2,8,6]));
+console.log(addOne([2,3,1,2,8,9]));
