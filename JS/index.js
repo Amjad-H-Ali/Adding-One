@@ -11,9 +11,7 @@ const addOne = (array, indx) => {
 	
 	array[i] = 0;
 
-	return array;
-
-
+	i --;
 };
 
 console.log(addOne([2,3,1,2,8,9]));
